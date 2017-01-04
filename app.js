@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var serviceCatering = require('./routes/CateringService');
-// var serviceFood = require('./routes/Food');
-// var serviceRentals = require('./routes/Rentals');
+var serviceFood = require('./routes/Food');
+var serviceRentals = require('./routes/Rentals');
 
 
 var app = express();
@@ -27,8 +27,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/CateringService', serviceCatering);
-// app.use('/Food', serviceFood);
-// app.use('/Rentals', serviceRentals);
+app.use('/Food', serviceFood);
+app.use('/Rentals', serviceRentals);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

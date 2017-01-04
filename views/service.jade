@@ -35,21 +35,24 @@ html
                     | Log in
                   a.button.is-info
                     | Sign up
-      .hero-body
-        .container.has-text-centered
-          .columns.is-vcentered
-            .column.is-5
-              figure.image.is-4by3
-                img(src='http://placehold.it/800x600', alt='Description')
-            .column.is-6.is-offset-1
-              h1.title.is-2
-                | Superhero Scaffolding
-              h2.subtitle.is-4
-                | Let this cover page describe a product or service.
-              br
-              p.has-text-centered
-                a.button.is-large
-                  | Learn more
+      ul
+          li
+            each service, i in services
+              .hero-body
+                .container.has-text-centered
+                  .columns.is-vcentered
+                        .column.is-5
+                          figure.image.is-4by3
+                            img(src='http://placehold.it/800x600', alt='Description')
+                        .column.is-6.is-offset-1
+                          h1.title.is-2
+                            | #{service.name}
+                          h2.subtitle.is-4
+                            | #{service.description}
+                          br
+                          p.has-text-centered
+                            a.button.is-large
+                              | Learn more
       .hero-foot
         .container
           .tabs.is-centered
