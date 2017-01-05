@@ -5160,9 +5160,9 @@ a.nav-item.is-tab:hover {
 
 .nav-item a.is-tab.is-active,
 a.nav-item.is-tab.is-active {
-  border-bottom: 3px solid #1fc8db;
+  border-bottom: 3px solid none;
   border-top: 3px solid transparent;
-  color: #1fc8db;
+  color: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -5428,7 +5428,7 @@ a.nav-item.is-tab.is-active {
 }
 
 .panel-list a:hover {
-  color: #1fc8db;
+  color: none;
 }
 
 .panel-tabs {
@@ -5532,8 +5532,8 @@ a.panel-block:hover {
 }
 
 .tabs li.is-active a {
-  border-bottom-color: #1fc8db;
-  color: #1fc8db;
+  border-bottom-color: none;
+  color: none;
 }
 
 .tabs ul {
@@ -5655,8 +5655,8 @@ a.panel-block:hover {
 }
 
 .tabs.is-toggle li.is-active a {
-  background-color: #1fc8db;
-  border-color: #1fc8db;
+  background-color: none;
+  border-color: none;
   color: white;
   z-index: 1;
 }
@@ -6182,7 +6182,7 @@ a.panel-block:hover {
 }
 
 .hero.is-primary {
-  background-color: #1fc8db;
+  background-color: none;
   color: white;
 }
 
@@ -6210,13 +6210,13 @@ a.panel-block:hover {
 
 @media screen and (max-width: 768px) {
   .hero.is-primary .nav-menu {
-    background-color: #1fc8db;
+    background-color: rgba(17, 17, 17, 0.32);
   }
 }
 
 .hero.is-primary a.nav-item,
 .hero.is-primary .nav-item a:not(.button) {
-  color: rgba(255, 255, 255, 0.5);
+  color: none;
 }
 
 .hero.is-primary a.nav-item:hover, .hero.is-primary a.nav-item.is-active,

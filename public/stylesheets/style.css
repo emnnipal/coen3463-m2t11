@@ -1,0 +1,40 @@
+.navcus{
+	background-color: rgba(17, 17, 17, 0.50)  !important;
+}
+
+.backgroundsmall{
+	background-position:right top !important;
+}
+
+.tilesbackground1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)),url('../images/wedding.jpg') !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+.tilesbackground2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)),url('../images/bday.jpg') !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+.tilesbackground3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)),url('../images/ball.jpg') !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+
+
+.customposition{
+	margin-top: 20% !important;
+    margin-bottom: 10% !important;
+    margin-right: 25% !important;
+    margin-left: 17% !important;
+    width:70% !important;
+}
+.backgroundcus{
+	background-repeat: no-repeat !important;
+    background-position: right top !important;
+    background-attachment: fixed !important;
+}

@@ -6,18 +6,18 @@ router.get('/', function(req, res, next) {
     var bodyData = {
     services: [
         {
-            "name":"Catering Service",
+            "name":"Wedding",
             "description":"Click to",
             "link": '/CateringService'
         },
         {
-            "name":"Food",
+            "name":"Birthdays",
             "description":"asdasd",
             "price_range":"PHP 1000 - PHP 1500",
             "link": '/Food'
         },
         {
-            "name":"Rentals",
+            "name":"Ball",
             "description":"asdasd",
             "price_range":"PHP 750 - PHP 1000",
             "link": '/Rentals'

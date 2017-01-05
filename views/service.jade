@@ -7,56 +7,61 @@ html
     title Cover - Free Bulma template
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/bulma.css')
-    link(rel='stylesheet', type='text/css', href='/stylesheets/base.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/hero.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
   body
-    section.hero.is-fullheight.is-default.is-bold
-      .hero-head
-        .container
-          nav.nav.has-shadow
-            .container
-              .nav-left
-                a.nav-item(href='/')
-                  img(src='../images/bulma.png', alt='Description')
-              span.nav-toggle
-                span
-                span
-                span
-              .nav-right.nav-menu
-                a.nav-item.is-tab.is-active
-                  | Home
-                a.nav-item.is-tab
-                  | Features
-                a.nav-item.is-tab
-                  | Team
-                a.nav-item.is-tab
-                  | Help
-                span.nav-item
-                  a.button
-                    | Log in
-                  a.button.is-info
-                    | Sign up
-      ul
-          li
-            each service, i in services
-              .hero-body
-                .container.has-text-centered
-                  .columns.is-vcentered
-                        .column.is-5
-                          figure.image.is-4by3
-                            img(src='http://placehold.it/800x600', alt='Description')
-                        .column.is-6.is-offset-1
-                          h1.title.is-2
-                            | #{service.name}
-                          h2.subtitle.is-4
-                            | #{service.description}
-                          br
-                          p.has-text-centered
-                            a.button.is-large
-                              | Learn more
-      .hero-foot
-        .container
-          .tabs.is-centered
+    section.hero.is-primary.is-small.header-image.backgroundsmall
+      .hero-head.navcus
+        header.nav
+          .container  
+            .nav-left
+              a.nav-item(href='/')
+                img(src='/images/bulma-white.png', alt='Logo')
+            span.nav-toggle
+              span
+              span
+              span
+            .nav-right.nav-menu.navcus
+              a.nav-item.is-active
+                | Home
+              a.nav-item
+                | Contact
+              a.nav-item
+                | About Us
+      .hero-body
+        .container.has-text-centered
+          h1.title.is-2
+            | Hero Heading
+          h2.subtitle.is-5
+            | A hero description could go here.
+         
+    .hero-cta
+      nav.level
+        .level-item.has-text-centered
+          each service, i in services
             ul
               li
-                a And this at the bottom
-    script(async='', type='text/javascript', src='../js/bulma.js')
+                .hero-body
+                  .container.has-text-centered
+                    .columns.is-vcentered
+                      .column.is-5
+                        figure.image.is-4by3
+                          img(src='http://placehold.it/800x600', alt='Description')
+                      .column.is-6.is-offset-1
+                        h1.title.is-2
+                          | #{service.name}
+                        h2.subtitle.is-4
+                           | #{service.description}
+                        br
+                        p.has-text-centered
+                          a.button.is-large
+                            | Learn more
+   footer.footer
+      .container
+        .content.has-text-centered
+          p
+            |  ©2016 COEN 3463 Team 11
+          p
+            a.icon(href='https://github.com/emnnipal/coen3463-m2t11')
+              i.fa.fa-github
+    script(async='', type='text/javascript', src='/javascripts/bulma.js')
