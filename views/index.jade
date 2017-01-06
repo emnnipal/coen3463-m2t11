@@ -9,6 +9,8 @@ html
     link(rel='stylesheet', type='text/css', href='/stylesheets/bulma.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/hero.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    
+  body
     section.hero.is-primary.is-small.header-image.backgroundcus
       .hero-head.navcus
         header.nav
@@ -25,9 +27,8 @@ html
                 | Home
               a.nav-item(href='/contact')
                 | Contact
-              a.nav-item
+              a.nav-item(href='https://coen3463-m1t11.herokuapp.com/')
                 | About Us
-  body
     section.hero.is-primary.is-small.header-image.backgroundcus
       .hero-body
         .container.has-text-centered.customtitle
@@ -46,16 +47,14 @@ html
                   figure.image.is-4by3
                     //img(src='http://placehold.it/640x480')
               .tile.is-parent.is-vertical
-                  article.tile.is-child.notification.is-primary.tilesbackground2
-                    a(href=services[1].link)
-                      p.title
-                        | #{services[1].name}
-                      p.subtitle .
-                  article.tile.is-child.notification.is-warning.tilesbackground3
-                    a(href=services[2].link)
-                      p.title
-                        | #{services[2].name}
-                      p.subtitle .
+                  a.article.tile.is-child.notification.is-primary.tilesbackground2(href=services[1].link)
+                    p.title
+                      | #{services[1].name}
+                    p.subtitle .
+                  a.article.tile.is-child.notification.is-warning.tilesbackground3(href=services[2].link)
+                    p.title
+                      | #{services[2].name}
+                    p.subtitle .
               
               
     

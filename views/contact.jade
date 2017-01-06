@@ -15,8 +15,8 @@ html
         header.nav
           .container  
             .nav-left
-              //a.nav-item(href='/')
-                //img(src='/images/logo_white.jpg', alt='Logo')
+              a.nav-item(href='/')
+                img(src='/images/logo_white.png', alt='Logo')
             span.nav-toggle
               span
               span
@@ -26,40 +26,43 @@ html
                 | Home
               a.nav-item.is-active
                 | Contact
-              a.nav-item
+              a.nav-item(href='https://coen3463-m1t11.herokuapp.com/')
                 | About Us
       .hero-body
         .container.has-text-centered
           h1.title.is-2.titlefont
-            | Contact 
+            | Big Mom
           h2.subtitle.is-5
-            | 
+            | Your one stop catering service.
   .section.servicescontact
     .hero-body
       .container
-          form(method='post',action='/contact')
-              .control.is-horizontal
-                .control-label
-                  label.label From
-                .control.is-grouped
-                  p.control.is-expanded
-                    input.input(type='text', placeholder='Name')
-                  p.control.is-expanded
-                    input.input(type='email', placeholder='Email')
-              .control.is-horizontal
-                .control-label
-                  label.label Subject
-                .control.is-grouped
-                  p.control.is-expanded
-                      input.input(type='text', placeholder='Service')
-              .control.is-horizontal
-                .control-label
-                  label.label Question
-                .control
-                  textarea.textarea(placeholder='Explain how we can help you')
-
-
-
+        .columns
+          .column.is-8.is-offset-2.has-text-centered
+            .title.is-2 Contact Us
+            br
+            form(method='post',action='/contact/send')
+                .control.is-horizontal
+                  .control-label
+                    label.label From
+                  .control.is-grouped
+                    p.control.is-expanded
+                      input.input(type='text', placeholder='Name', name='name')
+                    p.control.is-expanded
+                      input.input(type='email', placeholder='Email', name='email')
+                .control.is-horizontal
+                  .control-label
+                    label.label Service
+                  .control.is-grouped
+                    p.control.is-expanded
+                        input.input(type='text', placeholder='Service', name='service')
+                .control.is-horizontal
+                  .control-label
+                    label.label Question
+                  .control
+                    textarea.textarea(placeholder='Explain how we can help you', name ='message')
+                 p.control.contact
+                button.button.is-inverted(type='submit') Submit
   footer.footer
       .container
         .content.has-text-centered

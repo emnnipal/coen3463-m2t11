@@ -1,15 +1,38 @@
 var express = require('express');
 var router = express.Router();
+var nodemailer = require('nodemailer');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    var bodyData = {
-    services: [
-        
-        
-    ]
-  };
-  res.render('contact', bodyData);
+  res.render('contact', {title:'Contact'});
+});
+
+router.post('/send',function(req,res,next){
+    var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'chiyoda.re@gmail.com',
+            pass: 'rudeemman'
+        }
+    });
+
+    var mailOptions = {
+        from: 'Big Mom',
+        to: 'chiyoda.re@gmail.com',
+        subject: 'Website Submission',
+        text: 'You have a new submission with the following details... Name: ' + req.body.name + 'Email: ' +req.body.email+ 'Service' + req.body.service + 'Message: '+ req.body.message,
+        html: '<p>You got a new submission with the following details..</p><ul><li>Name: '+ req.body.name +'</li><li>Email: '+ req.body.email +'</li><li>Service: '+ req.body.service +'</li><li>Message: '+ req.body.message+'</li></ul>'
+        };
+    transporter.sendMail(mailOptions, function(error, info){
+        if(error){
+            console.log(error);
+            res.redirect('/');
+        } else{
+            console.log('Message Sent: '+info.response);
+            res.redirect('/');
+
+        }
+    });
 });
 
 module.exports = router;
