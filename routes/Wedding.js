@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
             "name":"Wedding",
             "description":"...",
             "link": '/Wedding',
-            "pic":'./images/Wedding.jpg'
+            "pic":'./images/wedding.jpg'
         },
         
     ]
