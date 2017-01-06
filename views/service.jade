@@ -25,23 +25,24 @@ block content
           | Big Mom
         h2.subtitle.is-5
           | Your one stop catering service.
-  .section     
+  .section.hero.is-light.is-small
     .hero-cta
         .level-item.has-text-centered
           each service, i in services
-            .container.has-text-centered.is-border2
+            .container.has-text-centered
               .columns.is-vcentered
                 .column
                   figure.image.is-4by3
-                    img(src="#{service.pic}", alt='Description')
+                    img.img-circle(src="#{service.pic}", alt='Description')
                 .column.is-6.is-offset-1
-                  h1.title.is-2
+                  h1.title.is-2.servicetitle
                     | #{service.name}
+                  hr
                   br
-                  h2.subtitle.is-4
+                  h2.subtitle.is-4.servicedes
                     | #{service.description}
                   br
-                  h2.subtitle.is-4
+                  h2.subtitle.is-4.servicedes
                     | #{service.description2}
                   br
                   p.has-text-centered

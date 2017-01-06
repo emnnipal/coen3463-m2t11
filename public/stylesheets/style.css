@@ -7,19 +7,19 @@
 }
 
 .tilesbackground1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)),url('../images/wedding.jpg') !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.10)),url('../images/wedding.jpg') !important;
   background-repeat:no-repeat !important;
   background-size:cover !important;
   background-position:center !important;
 }
 .tilesbackground2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)),url('../images/bday.jpg') !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.10)),url('../images/bday.jpg') !important;
   background-repeat:no-repeat !important;
   background-size:cover !important;
   background-position:center !important;
 }
 .tilesbackground3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.10),rgba(0, 0, 0, 0.10)),url('../images/ball.jpg') !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.10)),url('../images/ball.jpg') !important;
   background-repeat:no-repeat !important;
   background-size:cover !important;
   background-position:center !important;
@@ -36,7 +36,11 @@
 	background-color: #efefef !important;
 }
 .is-border2{
-	background-color: #ffffff !important;
+	background-color: #f2f2f2 !important;
+}
+
+.img-circle{
+    border-radius: 10% !important;
 }
 
 .color{
@@ -49,7 +53,22 @@
           flex-grow: 1 !important;
   -ms-flex-negative: 0 !important;
       flex-shrink: 1 !important;
+}
 
+.customfooter{
+  padding: 1px !important;
+  background-color: whitesmoke !important;
+}
+.sertitle{
+  text-align:center !important;
+}
+
+.servicetitle{
+  text-align:left !important;
+}
+.servicedes{
+  text-align:left !important;
+  font-size: 150% !important;
 }
 
 .logo{

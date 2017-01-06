@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  section.hero.is-primary.is-small.header-image.backgroundcus
+  section.hero.is-primary.is-large.header-image.backgroundcus
     .hero-head.navcus
       header.nav
         .container  
@@ -19,30 +19,44 @@ block content
               | Contact
             a.nav-item(href='https://coen3463-m1t11.herokuapp.com/')
               | About Us
-  section.hero.is-primary.is-small.header-image.backgroundcus
+  section.hero.is-primary.is-large.header-image.backgroundcus
     .hero-body
       .container.has-text-centered.customtitle
           h1.title.is-2.titlefont
             | Big Mom
           h2.subtitle.is-5
             | Your one stop catering service.
-      .tile.is-ancestor.customposition
-        .tile.is-vertical.is-12
-          .tile
-            a.tile.is-parent(href=services[0].link)
-              article.tile.is-child.notification.tilesbackground1
-                p.title 
-                  | #{services[0].name}
-                p.subtitle .
-                figure.image.is-4by3
-                  //img(src='http://placehold.it/640x480')
-            .tile.is-parent.is-vertical
-                a.article.tile.is-child.notification.tilesbackground2(href=services[1].link)
-                  p.title
-                    | #{services[1].name}
+  section.hero.is-small.has-text-centered.is-light
+    .hero-body
+      .container
+          hr
+          h1.title.is-2.titlefont
+            | Why Choose Us
+          h2.subtitle.is-5
+            | When you choose Big Mom Catering Services, you'll get the benefits of the creative vision and talents of a team of talented event planners who will help to bring your vision of your event to life. Our team also includes talented cooks who will create the perfect menu for your wedding or party
+          hr
+  section.hero.is-primary.is-small.header-image.backgroundcus
+    .hero-body
+      .container
+        h1.title.is-2.titlefont.sertitle
+              | Services    
+        .tile.is-ancestor.customposition
+          .tile.is-vertical.is-12
+            .tile
+              a.tile.is-parent(href=services[0].link)
+                article.tile.is-child.notification.tilesbackground1
+                  p.title 
+                    | #{services[0].name}
                   p.subtitle .
-                a.article.tile.is-child.notification.tilesbackground3(href=services[2].link)
-                  p.title
-                    | #{services[2].name}
-                  p.subtitle .
+                  figure.image.is-4by3
+                    //img(src='http://placehold.it/640x480')
+              .tile.is-parent.is-vertical
+                  a.article.tile.is-child.notification.tilesbackground2(href=services[1].link)
+                    p.title
+                      | #{services[1].name}
+                    p.subtitle .
+                  a.article.tile.is-child.notification.tilesbackground3(href=services[2].link)
+                    p.title
+                      | #{services[2].name}
+                    p.subtitle .
   include footer
