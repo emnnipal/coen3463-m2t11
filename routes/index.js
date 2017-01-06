@@ -14,14 +14,12 @@ router.get('/', function(req, res, next) {
         {
             "name":"Birthdays",
             "description":"asdasd",
-            "price_range":"PHP 1000 - PHP 1500",
             "link": '/Bday'
             
         },
         {
             "name":"Ball",
             "description":"asdasd",
-            "price_range":"PHP 750 - PHP 1000",
             "link": '/Ball'
             
         },
