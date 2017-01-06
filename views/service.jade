@@ -35,25 +35,25 @@ html
           h2.subtitle.is-5
             | Your one stop catering service.
   body
-  .section     
-    .hero-cta
-        .level-item.has-text-centered
-          each service, i in services
-            .container.has-text-centered.is-border2
-              .columns.is-vcentered
-                .column
-                  figure.image.is-4by3
-                    img(src="#{service.pic}", alt='Description')
-                .column.is-6.is-offset-1
-                  h1.title.is-2
-                    | #{service.name}
-                  br
-                  h2.subtitle.is-4
-                     | #{service.description}
-                  br
-                  p.has-text-centered
-                    a.button.is-large
-                      | Inquire
+    .section     
+      .hero-cta
+          .level-item.has-text-centered
+            each service, i in services
+              .container.has-text-centered.is-border2
+                .columns.is-vcentered
+                  .column
+                    figure.image.is-4by3
+                      img(src='/images/Bday.jpg', alt='Description')
+                  .column.is-6.is-offset-1
+                    h1.title.is-2
+                      | #{service.name}
+                    br
+                    h2.subtitle.is-4
+                       | #{service.description}
+                    br
+                    p.has-text-centered
+                      a.button.is-large
+                        | Inquire
 
   footer.footer
     .container
