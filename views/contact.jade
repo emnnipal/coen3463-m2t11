@@ -34,10 +34,31 @@ html
             | Contact 
           h2.subtitle.is-5
             | 
-  .section
-    .hero-cta      
-      .container.is-fluid
-       | ........
+  .section.servicescontact
+    .hero-body
+      .container
+          form(method='post',action='/contact')
+              .control.is-horizontal
+                .control-label
+                  label.label From
+                .control.is-grouped
+                  p.control.is-expanded
+                    input.input(type='text', placeholder='Name')
+                  p.control.is-expanded
+                    input.input(type='email', placeholder='Email')
+              .control.is-horizontal
+                .control-label
+                  label.label Subject
+                .control.is-grouped
+                  p.control.is-expanded
+                      input.input(type='text', placeholder='Service')
+              .control.is-horizontal
+                .control-label
+                  label.label Question
+                .control
+                  textarea.textarea(placeholder='Explain how we can help you')
+
+
 
   footer.footer
       .container
