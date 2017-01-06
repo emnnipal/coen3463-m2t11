@@ -9,14 +9,14 @@ html
     link(rel='stylesheet', type='text/css', href='/stylesheets/bulma.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/hero.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
-
+  body
     section.hero.is-primary.is-small.header-image.backgroundsmall
       .hero-head.navcus
         header.nav
           .container  
             .nav-left
-              a.nav-item(href='/')
-                img(src='/images/logo_white.png', alt='Logo')
+              //a.nav-item(href='/')
+                //img(src='/images/logo_white.jpg', alt='Logo')
             span.nav-toggle
               span
               span
@@ -24,43 +24,27 @@ html
             .nav-right.nav-menu.navcus
               a.nav-item(href='/')
                 | Home
-              a.nav-item(href='/contact')
+              a.nav-item.is-active
                 | Contact
               a.nav-item
                 | About Us
       .hero-body
         .container.has-text-centered
           h1.title.is-2.titlefont
-            | Big Mom
+            | Contact 
           h2.subtitle.is-5
-            | Your one stop catering service.
-  body
-  .section     
-    .hero-cta
-        .level-item.has-text-centered
-          each service, i in services
-            .container.has-text-centered.is-border2
-              .columns.is-vcentered
-                .column
-                  figure.image.is-4by3
-                    img(src=service.pic, alt='Description')
-                .column.is-6.is-offset-1
-                  h1.title.is-2
-                    | #{service.name}
-                  br
-                  h2.subtitle.is-4
-                     | #{service.description}
-                  br
-                  p.has-text-centered
-                    a.button.is-large
-                      | Inquire
+            | 
+  .section
+    .hero-cta      
+      .container.is-fluid
+       | ........
 
   footer.footer
-    .container
-      .content.has-text-centered
-        p
-          |  ©2016 COEN 3463 Team 11
-        p
-          a.icon(href='https://github.com/emnnipal/coen3463-m2t11')
-            i.fa.fa-github
+      .container
+        .content.has-text-centered
+          p
+            |  ©2016 COEN 3463 Team 11
+          p
+            a.icon(href='https://github.com/emnnipal/coen3463-m2t11')
+              i.fa.fa-github
     script(async='', type='text/javascript', src='/javascripts/bulma.js')

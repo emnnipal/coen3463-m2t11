@@ -25,11 +25,29 @@
   background-position:center !important;
 }
 
+.titlefont{
+	font-family: Papyrus !important;
+}
+.customtitle{
+	margin-top: 1% !important;
+}
 
+.is-border{
+	background-color: #efefef !important;
+}
+.is-border2{
+	background-color: #ffffff !important;
+}
+
+.color{
+	background-color: #ffffff !important;
+}
+
+.logo{
+	width: 100% !important;
+}
 .customposition{
-	margin-top: 20% !important;
-    margin-bottom: 10% !important;
-    margin-right: 25% !important;
+	margin-top: 5% !important;
     margin-left: 17% !important;
     width:70% !important;
 }

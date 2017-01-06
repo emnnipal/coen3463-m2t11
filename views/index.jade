@@ -9,14 +9,13 @@ html
     link(rel='stylesheet', type='text/css', href='/stylesheets/bulma.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/hero.css')
     link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
-  body
     section.hero.is-primary.is-small.header-image.backgroundcus
       .hero-head.navcus
         header.nav
           .container  
             .nav-left
               a.nav-item(href='/')
-                img(src='/images/bulma-white.png', alt='Logo')
+                img(src='/images/logo_white.png', alt='Logo')
             span.nav-toggle
               span
               span
@@ -24,29 +23,36 @@ html
             .nav-right.nav-menu.navcus
               a.nav-item.is-active
                 | Home
-              a.nav-item
+              a.nav-item(href='/contact')
                 | Contact
               a.nav-item
                 | About Us
-      .hero-body.customposition
-        .tile.is-ancestor
+  body
+    section.hero.is-primary.is-small.header-image.backgroundcus
+      .hero-body
+        .container.has-text-centered.customtitle
+            h1.title.is-2.titlefont
+              | Big Mom
+            h2.subtitle.is-5
+              | Your one stop catering service.
+        .tile.is-ancestor.customposition
           .tile.is-vertical.is-12
             .tile
-              a.tile.is-parent(href='/CateringService')
+              a.tile.is-parent(href=services[0].link)
                 article.tile.is-child.notification.is-info.tilesbackground1
                   p.title 
                     | #{services[0].name}
-                  p.subtitle 
+                  p.subtitle With an image
                   figure.image.is-4by3
                     //img(src='http://placehold.it/640x480')
               .tile.is-parent.is-vertical
                   article.tile.is-child.notification.is-primary.tilesbackground2
-                    a(href='/Food')
+                    a(href=services[1].link)
                       p.title
                         | #{services[1].name}
                       p.subtitle Top tile
                   article.tile.is-child.notification.is-warning.tilesbackground3
-                    a(href='/Rentals')
+                    a(href=services[2].link)
                       p.title
                         | #{services[2].name}
                       p.subtitle Bottom tile
