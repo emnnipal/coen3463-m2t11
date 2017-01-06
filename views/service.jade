@@ -1,70 +1,50 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    title Cover - Catering Services
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-    link(rel='stylesheet', type='text/css', href='/stylesheets/bulma.css')
-    link(rel='stylesheet', type='text/css', href='/stylesheets/hero.css')
-    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+extends layout
 
-    
-  body
-    section.hero.is-primary.is-small.header-image.backgroundsmall
-      .hero-head.navcus
-        header.nav
-          .container  
-            .nav-left
-              a.nav-item(href='/')
-                img(src='/images/logo_white.png', alt='Logo')
-            span.nav-toggle
-              span
-              span
-              span
-            .nav-right.nav-menu.navcus
-              a.nav-item(href='/')
-                | Home
-              a.nav-item(href='/contact')
-                | Contact
-              a.nav-item(href='https://coen3463-m1t11.herokuapp.com/')
-                | About Us
-      .hero-body
-        .container.has-text-centered
-          h1.title.is-2.titlefont
-            | Big Mom
-          h2.subtitle.is-5
-            | Your one stop catering service.
-    .section     
-      .hero-cta
-          .level-item.has-text-centered
-            each service, i in services
-              .container.has-text-centered.is-border2
-                .columns.is-vcentered
-                  .column
-                    figure.image.is-4by3
-                      img(src="#{service.pic}", alt='Description')
-                  .column.is-6.is-offset-1
-                    h1.title.is-2
-                      | #{service.name}
-                    br
-                    h2.subtitle.is-4
-                      | #{service.description}
-                    br
-                    h2.subtitle.is-4
-                      | #{service.description2}
-                    br
-                    p.has-text-centered
-                      a.button.is-large(href='/contact')
-                        | Inquire
-
-  footer.footer
-    .container
-      .content.has-text-centered
-        p
-          |  ©2016 COEN 3463 Team 11
-        p
-          a.icon(href='https://github.com/emnnipal/coen3463-m2t11')
-            i.fa.fa-github
-    script(async='', type='text/javascript', src='/javascripts/bulma.js')
+block content
+  section.hero.is-primary.is-small.header-image.backgroundsmall
+    .hero-head.navcus
+      header.nav
+        .container  
+          .nav-left
+            a.nav-item(href='/')
+              img(src='/images/logo_white.png', alt='Logo')
+          span.nav-toggle
+            span
+            span
+            span
+          .nav-right.nav-menu.navcus
+            a.nav-item(href='/')
+              | Home
+            a.nav-item(href='/contact')
+              | Contact
+            a.nav-item(href='https://coen3463-m1t11.herokuapp.com/')
+              | About Us
+    .hero-body
+      .container.has-text-centered
+        h1.title.is-2.titlefont
+          | Big Mom
+        h2.subtitle.is-5
+          | Your one stop catering service.
+  .section     
+    .hero-cta
+        .level-item.has-text-centered
+          each service, i in services
+            .container.has-text-centered.is-border2
+              .columns.is-vcentered
+                .column
+                  figure.image.is-4by3
+                    img(src="#{service.pic}", alt='Description')
+                .column.is-6.is-offset-1
+                  h1.title.is-2
+                    | #{service.name}
+                  br
+                  h2.subtitle.is-4
+                    | #{service.description}
+                  br
+                  h2.subtitle.is-4
+                    | #{service.description2}
+                  br
+                  p.has-text-centered
+                    a.button.is-large(href='/contact')
+                      | Inquire
+  include footer
