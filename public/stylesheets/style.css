@@ -36,8 +36,20 @@
 }
 
 .isboxedpicture:hover{
-  transform: scale(1.05, 1.05) !important;
-    opacity: 1 !important;
+  transform: scale(1.05,1.05);
+  opacity: 1 !important;
+}
+.isboxedpicture2:hover{
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  opacity: 1 !important;
+  -webkit-transition: transform .25s ease-in-out;
+  -moz-transition:transform 1.05s ease-in-out;
+  -ms-transition:transform 1.05s ease-in-out;
 }
 .titlefont{
 	font-family: Papyrus !important;
