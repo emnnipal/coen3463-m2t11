@@ -13,11 +13,11 @@ block content
             span
             span
           .nav-right.nav-menu.navcus
-            a.nav-item.is-active
+            a.nav-item.is-active.isboxedpicture
               | Home
-            a.nav-item(href='/contact')
+            a.nav-item.isboxedpicture(href='/contact')
               | Contact
-            a.nav-item(href='https://coen3463-m1t11.herokuapp.com/')
+            a.nav-item.isboxedpicture(href='https://coen3463-m1t11.herokuapp.com/')
               | About Us
   
     .hero-body
@@ -32,6 +32,7 @@ block content
           hr
           h1.title.is-2.titlefont
             | Why Choose Us
+          br
           h2.subtitle.is-5
             | When you choose Big Mom Catering Services, you'll get the benefits of the creative vision and talents of a team of talented event planners who will help to bring your vision of your event to life. Our team also includes talented cooks who will create the perfect menu for your wedding or party
           hr
@@ -43,7 +44,7 @@ block content
         .tile.is-ancestor.customposition
           .tile.is-vertical.is-12
             .tile
-              a.tile.is-parent(href=services[0].link)
+              a.tile.is-parent.isboxedpicture(href=services[0].link)
                 article.tile.is-child.notification.tilesbackground1
                   p.title 
                     | #{services[0].name}
@@ -51,11 +52,11 @@ block content
                   figure.image.is-4by3
                     //img(src='http://placehold.it/640x480')
               .tile.is-parent.is-vertical
-                  a.article.tile.is-child.notification.tilesbackground2(href=services[1].link)
+                  a.article.tile.is-child.notification.tilesbackground2.isboxedpicture(href=services[1].link)
                     p.title
                       | #{services[1].name}
                     p.subtitle .
-                  a.article.tile.is-child.notification.tilesbackground3(href=services[2].link)
+                  a.article.tile.is-child.notification.tilesbackground3.isboxedpicture(href=services[2].link)
                     p.title
                       | #{services[2].name}
                     p.subtitle .

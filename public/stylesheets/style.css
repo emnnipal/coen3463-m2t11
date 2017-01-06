@@ -4,14 +4,17 @@
 
 .backgroundsmall{
 	background-position:right top !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.40)),url('../images/catering-background.jpeg') !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
 }
-
-.tilesbackground1 {
+.tilesbackground1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.10)),url('../images/wedding.jpg') !important;
   background-repeat:no-repeat !important;
   background-size:cover !important;
   background-position:center !important;
 }
+
 .tilesbackground2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.10)),url('../images/bday.jpg') !important;
   background-repeat:no-repeat !important;
@@ -25,6 +28,17 @@
   background-position:center !important;
 }
 
+
+.isboxedcustom a:hover {
+  background-color: rgba(10, 10, 10, 0.40) !important;
+  border-color: #dbdbdb !important;
+  border-bottom-color: transparent !important;
+}
+
+.isboxedpicture:hover{
+  transform: scale(1.05, 1.05) !important;
+    opacity: 1 !important;
+}
 .titlefont{
 	font-family: Papyrus !important;
 }

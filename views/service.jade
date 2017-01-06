@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  section.hero.is-primary.is-small.header-image.backgroundsmall
+  section.hero.is-primary.is-small.backgroundsmall
     .hero-head.navcus
       header.nav
         .container  
@@ -25,6 +25,19 @@ block content
           | Big Mom
         h2.subtitle.is-5
           | Your one stop catering service.
+
+    .hero-foot.has-text-centered
+      nav.tabs.isboxedcustom.is-fullwidth
+        .container
+          ul
+            li
+              a.isboxedpicture(href='/Wedding') Wedding
+            li
+              a.isboxedpicture(href='/Bday') Birthdays
+            li
+              a.isboxedpicture(href='/Ball') Ball
+            
+
   .section.hero.is-light.is-small
     .hero-cta
         .level-item.has-text-centered
